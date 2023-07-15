@@ -1,0 +1,289 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #3b6886;
+    
+}
+nav{
+    background-color: rgb(110, 197, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px 0px 150px;
+   position: fixed;
+   width: 80%;
+   
+}
+.header{
+ background-color:#056470;
+ background-image: url('img/header_bg.png');
+ background-repeat: no-repeat;
+ margin-bottom: 0;
+ background-position: bottom right;
+
+
+}
+.dev{
+  width:4%;
+  padding-bottom: 40px;
+  color: aliceblue;
+
+ 
+   
+}
+.nav-title{
+color: floralwhite;
+font-size: x-large;
+}
+
+.nav-text{
+    color: orange;
+}
+
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style:none ;
+    margin: 20px;
+    align-items: center;
+    
+}
+
+nav li a{
+    text-decoration: none;
+    color: floralwhite;
+ 
+}
+nav li a:hover{
+    color: bisque;
+}
+
+.btn-1{
+     background: orange;
+     border-radius: 5px;
+     color: rgb(252, 251, 251);
+     padding: 10px 20px;
+     cursor: pointer;
+     margin-right: 10px;
+     border: none;
+}
+
+.btn-1:hover{
+    background-color: rgb(15, 67, 112);
+    transition-duration: .03s;
+}
+
+
+.banner{
+    display: flex;
+    padding: 150px 30px 0px 150px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8px;
+  
+}
+.banner-text{
+   max-width: 500px; 
+   color: aliceblue;
+   margin-right: 90px;
+
+}
+.banner .profile{
+    width: 400px;
+  
+}
+
+
+
+#myself{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-2{
+    background: orange;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+.btn-2:hover{
+   background-color: rgb(15, 67, 112);
+   transition-duration: .03s;
+}
+main{
+    max-width: 1100px;
+     margin: auto;
+}
+
+.about-heading{
+    text-align: center;
+    border: 2px solid rgb(92, 83, 83);
+    background-color: rgb(247, 211, 198);
+    margin-top: 100px;
+}
+.about{
+  padding: 10px;
+}
+
+
+.about-address{
+    display: flex;
+  justify-content: center;
+}
+
+.about-info{
+    margin-right: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+.about-title-1{
+ margin-bottom: 0;
+}
+
+
+
+
+.section-title{
+    text-align: center;
+    padding: 0% 100px;
+    color:floralwhite;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.skill{
+    border: 1px solid floralwhite;
+
+    text-align: inline;
+    padding: 30px 50px 30px;
+    background-color: rgb(185, 138, 121);
+    margin-top: 60px;
+    color: aliceblue;
+
+}
+#images{
+    width: 25%;
+    margin-top: 20px;
+}
+
+
+
+.resume-head{
+    text-align: center;
+    margin-top: 100px;
+    color:rgb(0, 255, 64);
+  
+}
+
+
+.section-resume{
+ display: flex;
+
+   
+}
+
+.resume{
+    margin: auto;
+    margin-right:20px;
+    margin-top: 50px;
+    color: floralwhite;
+}
+
+.resume-h4{
+    margin-bottom:-3%;
+}
+
+
+.resume-btn{
+    background: orange;
+    border-radius: 5px;
+    color: rgb(255, 255, 254);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px
+}
+.resume-btn:hover{
+    background-color: rgb(15, 67, 112);
+    transition-duration: .03s;
+  
+ }
+
+
+hr{
+    color: aliceblue;
+}
+
+.btn-dowload{
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #056470;
+    margin-top: 100px;
+ 
+
+}
+
+.footer-head{
+  padding: 50px 60px ;     
+  /* margin-right:50px; */
+ 
+  color: floralwhite;
+   
+}
+
+.footer-ending{
+   margin-top: 2px;
+   background-color: black;
+   color: floralwhite;
+}
+
+
+
+
+
+/* mobile responsive  */
+
+
+@media screen and (max-width:576px) {
+
+    .section-title, .footer-start, .section-resume, .skill-container, .about-address, .banner , .btn-2{
+        flex-direction: column;
+    }
+    .skill-description , .section-title , .about-title, .nav ,.about ,.banner-text{
+        padding: 10px;
+    }
+
+    .banner .profile{
+        width: 220px;
+        
+    }
+
+
+    .about-info{
+      margin-left: 40px;
+    }
+
+}
